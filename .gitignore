@@ -1,0 +1,23 @@
+
+# Binaries
+*.exe
+*.test
+*.out
+bin/
+dist/
+
+# Go vendor
+vendor/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store

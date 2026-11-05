@@ -1,5 +1,2 @@
-Go is a programming language.
-Go is simple and efficient.
-Java is also a programming language.
-Python is popular.
-Привет, мир! Go — отличный язык.
+Go is a programming language. Go is expressive, concise, clean, and efficient.
+Concurrency is a core idea in Go programming. Programming in Go is fun.

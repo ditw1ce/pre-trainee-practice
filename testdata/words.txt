@@ -1,0 +1,5 @@
+Go is a programming language.
+Go is simple and efficient.
+Java is also a programming language.
+Python is popular.
+Привет, мир! Go — отличный язык.

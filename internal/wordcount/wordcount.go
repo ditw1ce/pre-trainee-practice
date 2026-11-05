@@ -35,9 +35,6 @@ func Tokens(s string) []string {
 	return tokens
 }
 
-// TopN returns up to n pairs, highest count first.
-// Ties: alphabetical ascending by Word.
-// If n <= 0, return an empty slice.
 func TopN(freq map[string]int, n int) []Pair {
 	if n <= 0 {
 		return []Pair{}
@@ -64,7 +61,6 @@ func TopN(freq map[string]int, n int) []Pair {
 	return pairs
 }
 
-// DropStop removes tokens that appear in stop (lowercase keys).
 func DropStop(tokens []string, stop map[string]struct{}) []string {
 	filtered := make([]string, 0, len(tokens))
 	for _, token := range tokens {
@@ -74,13 +70,10 @@ func DropStop(tokens []string, stop map[string]struct{}) []string {
 	}
 	return filtered
 }
-func Count(tokens []string) map[string]int {	
+func Count(tokens []string) map[string]int {
 	counts := make(map[string]int)
 	for _, token := range tokens {
 		counts[token]++
 	}
 	return counts
-}
-func TopN(freq map[string]int, n int) []Pair {
-	
 }
